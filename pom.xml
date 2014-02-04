@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>qrcodejs</artifactId>
-    <version>07f829d</version>
+    <version>07f830d-SNAPSHOT</version>
     <name>QRCode.js</name>
     <description>WebJar for QRCode.js</description>
     <url>http://webjars.org</url>
@@ -36,7 +36,7 @@
         <url>http://github.com/webjars/qrcodejs</url>
         <connection>scm:git:https://github.com/webjars/qrcodejs.git</connection>
         <developerConnection>scm:git:https://github.com/webjars/qrcodejs.git</developerConnection>
-        <tag>qrcodejs-07f829d</tag>
+        <tag>HEAD</tag>
     </scm>
 
     <developers>
