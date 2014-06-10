@@ -11,15 +11,15 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>qrcodejs</artifactId>
-    <version>07f830d-SNAPSHOT</version>
+    <version>1c78ccd-SNAPSHOT</version>
     <name>QRCode.js</name>
     <description>WebJar for QRCode.js</description>
     <url>http://webjars.org</url>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <upstreamVersion>07f829d4e00a581278e53b18e465fdac07b7f65b</upstreamVersion>
-        <upstreamShortVersion>07f829d</upstreamShortVersion>
+        <upstreamVersion>1c78ccd71ef6418dcdb6bafac43fbc89aec724ab</upstreamVersion>
+        <upstreamShortVersion>1c78ccd</upstreamShortVersion>
         <upstreamUrl>https://raw2.github.com/davidshimjs/qrcodejs/${upstreamVersion}</upstreamUrl>
         <destDir>${project.build.outputDirectory}/META-INF/resources/webjars/${project.artifactId}/${upstreamShortVersion}</destDir>
     </properties>
