@@ -11,16 +11,16 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>qrcodejs</artifactId>
-    <version>1c79ccd-SNAPSHOT</version>
+    <version>04f46c6-SNAPSHOT</version>
     <name>QRCode.js</name>
     <description>WebJar for QRCode.js</description>
     <url>http://webjars.org</url>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <upstreamVersion>1c78ccd71ef6418dcdb6bafac43fbc89aec724ab</upstreamVersion>
-        <upstreamShortVersion>1c78ccd</upstreamShortVersion>
-        <upstreamUrl>https://raw2.github.com/davidshimjs/qrcodejs/${upstreamVersion}</upstreamUrl>
+        <upstreamVersion>04f46c6a0708418cb7b96fc563eacae0fbf77674</upstreamVersion>
+        <upstreamShortVersion>04f46c6</upstreamShortVersion>
+        <upstreamUrl>https://raw.githubusercontent.com/davidshimjs/qrcodejs/${upstreamVersion}</upstreamUrl>
         <destDir>${project.build.outputDirectory}/META-INF/resources/webjars/${project.artifactId}/${upstreamShortVersion}</destDir>
     </properties>
 
@@ -90,27 +90,14 @@
             </plugin>
 
             <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-release-plugin</artifactId>
-                <version>2.5</version>
-                <dependencies>
-                    <dependency>
-                        <groupId>org.apache.maven.scm</groupId>
-                        <artifactId>maven-scm-provider-gitexe</artifactId>
-                        <version>1.9</version>
-                    </dependency>
-                </dependencies>
-            </plugin>
-
-            <plugin>
-                <groupId>org.sonatype.plugins</groupId>
-                <artifactId>nexus-staging-maven-plugin</artifactId>
-                <version>1.5.1</version>
+                <groupId>org.sonatype.central</groupId>
+                <artifactId>central-publishing-maven-plugin</artifactId>
+                <version>0.8.0</version>
                 <extensions>true</extensions>
                 <configuration>
-                    <serverId>sonatype-nexus-staging</serverId>
-                    <nexusUrl>https://oss.sonatype.org/</nexusUrl>
-                    <autoReleaseAfterClose>true</autoReleaseAfterClose>
+                    <publishingServerId>central</publishingServerId>
+                    <autoPublish>true</autoPublish>
+                    <waitUntil>published</waitUntil>
                 </configuration>
             </plugin>
         </plugins>
