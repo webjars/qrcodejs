@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>qrcodejs</artifactId>
-    <version>04f46c6-SNAPSHOT</version>
+    <version>04f46c6</version>
     <name>QRCode.js</name>
     <description>WebJar for QRCode.js</description>
     <url>http://webjars.org</url>
